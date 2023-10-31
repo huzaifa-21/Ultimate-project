@@ -9,7 +9,7 @@ var gulp = require("gulp"),
 
 // Task html 
 gulp.task('html', () => {
-  return gulp.src('project/html/**/*.pug')
+  return gulp.src('project/html/*.pug')
     .pipe(pug({
       pretty: true
     }))
@@ -39,7 +39,7 @@ gulp.task('watch', () => {
     port: 8888,
     liveReload: true
   });
-  gulp.watch('project/html/*.pug', gulp.parallel('html'));
+  gulp.watch('project/html/**/*.pug', gulp.parallel('html'));
   gulp.watch('project/css/**/*.*', gulp.parallel('css'));
 });
 

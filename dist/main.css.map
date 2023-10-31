@@ -1,0 +1,16 @@
+{
+  "version": 3,
+  "sources": [
+    "sass/layout/_header.scss",
+    "sass/layout/_grid.scss",
+    "sass/components/_buttons.scss"
+  ],
+  "names": [],
+  "mappings": "AAAA,QACA,aAAA,CACA,eAAA,CCFA,SACE,SAAA,CCDF,UACE,kBAAA,CACA,UAAA,CACA,WAAA,CACA,QAAA",
+  "file": "main.css",
+  "sourcesContent": [
+    ".header {\nfont-size: 5px;\nfont-weight: 800;\n}\n",
+    ".content {\n  width: 50%;\n}\n",
+    ".main-btn {\n  border-radius: 10px;\n  width: 40px;\n  padding: 5px;\n  left: 1px;\n}\n"
+  ]
+}

@@ -1,2 +1,3 @@
 # Ultimate-project
-working with everything that i learn for developing website
+
+working with everything that i learned for developing website

@@ -3,12 +3,13 @@ var gulp = require("gulp"),
   prefix = require("gulp-autoprefixer"),
   sass = require('gulp-sass')(require("sass")),
   connect = require('gulp-connect'),
-  pug = require('gulp-pug')
+  pug = require('gulp-pug'),
+  sourcemaps = require('gulp-sourcemaps')
   ;
 
 // Task html 
-gulp.task('html', async () => {
-  return gulp.src('project/html/*.pug')
+gulp.task('html', () => {
+  return gulp.src('project/html/**/*.pug')
     .pipe(pug({
       pretty: true
     }))
@@ -18,8 +19,10 @@ gulp.task('html', async () => {
 // Task css
 gulp.task("css", function () {
   return gulp.src(['project/css/main.scss',])
+    .pipe(sourcemaps.init())
     .pipe(sass({ outputStyle: "compressed" }))
     .pipe(prefix('last 2 versions'))
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('dist'));
 });
 

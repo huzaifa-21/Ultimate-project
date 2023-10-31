@@ -1,5 +1,5 @@
 {
-  "name": "gulp-project",
+  "name": "ultimate-project",
   "version": "1.0.0",
   "description": "my first project",
   "main": "index.js",
@@ -9,7 +9,6 @@
   "author": "huzaifa salah",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-cli": "^2.3.0",
     "gulp-concat": "^2.6.1",
@@ -17,6 +16,5 @@
     "gulp-pug": "^5.0.0",
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
-    "sass": "^1.69.4"
+    "sass": "^1.69.5"
   }
-}
